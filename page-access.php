@@ -3,7 +3,6 @@
 ?>
 
     <main id="main">
-
         <section class="page-index common">
             <div class="container">
                 <div class="title">
