@@ -1,0 +1,265 @@
+//hide
+@include pc {
+    .pc-hide, .sp-only {
+        display: none !important;
+    }
+}
+
+@include sp {
+    .sp-hide, .pc-only {
+        display: none !important;
+    }
+}
+
+
+// wrapper
+#wrapper {
+    position: relative;
+    width: 100%;
+}
+
+main {
+    position: relative;
+}
+
+/* input */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+select,
+textarea {
+    position: relative;
+    background: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    box-sizing: border-box;
+    padding: 0.9rem 1.6rem;
+    width: 100%;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: left;
+    color: #000000;
+    outline: none;
+    border-radius: 0.4rem;
+    vertical-align: middle;
+    &::placeholder {
+        color: #BFBFBF;
+    }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+select {
+    height: 4.5rem;
+}
+
+textarea {
+    height: 15.0rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #2F3351;
+}
+
+select {
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url(../image/select-down.svg);
+    background-position: calc(100% - 1.2rem) 50%;
+    background-size: 1.2rem 0.8rem;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+
+/* The custom checkbox */
+.checkbox {
+    display: block;
+    position: relative;
+    padding-left: 4.0rem;
+    cursor: pointer;
+    font-size: 2.0rem;
+    user-select: none;
+    @include sp {
+        font-size: 1.6rem;
+        padding-left: 3.0rem;
+    }
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+    .checkmark {
+        position: absolute;
+        top: 0.5rem;
+        left: 0;
+        height: 2.5rem;
+        width: 2.5rem;
+        background-color: #FFFFFF;
+        border: 1px solid #000000;
+        @include sp {
+            top: 0.3rem;
+            height: 2.0rem;
+            width: 2.0rem;
+        }
+    }
+    &:hover input ~ .checkmark {
+        background-color: #f2f3f4;
+    }
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    input:checked ~ .checkmark:after {
+        display: block;
+    }
+    input:checked ~ .checkmark {
+        border-color: #00339B;
+    }
+    .checkmark:after {
+        left: 0.8rem;
+        top: 0.2rem;
+        width: 0.8rem;
+        height: 1.4rem;
+        border: 1px solid #00339B;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+        @include sp {
+            left: 0.6rem;
+            width: 0.6rem;
+            height: 1.2rem;
+        }
+    }
+}
+
+.radiobox {
+    display: block;
+    position: relative;
+    padding-left: 4.0rem;
+    cursor: pointer;
+    font-size: 2.0rem;
+    user-select: none;
+    @include sp {
+        font-size: 1.6rem;
+        padding-left: 3.0rem;
+    }
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+    .checkmark {
+        position: absolute;
+        top: 0.5rem;
+        left: 0;
+        height: 2.5rem;
+        width: 2.5rem;
+        background-color: #FFFFFF;
+        border: 1px solid #000000;
+        border-radius: 50%;
+        @include sp {
+            top: 0.3rem;
+            height: 2.0rem;
+            width: 2.0rem;
+        }
+    }
+    &:hover input ~ .checkmark {
+        background-color: #f2f3f4;
+    }
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    input:checked ~ .checkmark:after {
+        display: block;
+    }
+    input:checked ~ .checkmark {
+        border-color: #00339B;
+    }
+    .checkmark:after {
+        left: 0.4rem;
+        top: 0.4rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: #00339B;
+        border-radius: 50%;
+        @include sp {
+            width: 1.0rem;
+            height: 1.0rem;
+        }
+    }
+}
+
+
+// container
+.container,
+.container-fluid {
+    width: 100%;
+    padding-right: 2.0rem;
+    padding-left: 2.0rem;
+    margin-right: auto;
+    margin-left: auto;
+    @include sp {
+        padding-left: 3.0rem;
+        padding-right: 3.0rem;
+    }
+}
+
+.container {
+    max-width: 126.0rem;
+}
+
+@include sp {
+    .container {
+        max-width: 100%;
+    }
+}
+
+.content-in {
+    position: relative;
+    max-width: 122.0rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// picture
+picture,
+figure {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+
+// Color
+.color-blue {
+    color: $color-blue !important;
+}
+
+.color-red {
+    color: $color-red !important;
+}

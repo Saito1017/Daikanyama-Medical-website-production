@@ -1,0 +1,71 @@
+// ==========================================================================
+// Typography
+// ==========================================================================
+// Font Families
+$font_noto: 'Noto Sans JP', sans-serif;
+$font_notoserif: 'Noto Serif JP', serif;
+$font_gothic: 'Yu Gothic', sans-serif;
+$font_anton: 'Anton', sans-serif;
+$font_ubuntu: 'Ubuntu', sans-serif;
+$font_oswald: 'Oswald', sans-serif;
+$font_inter: "Inter", sans-serif;
+$font_roboto: "Roboto", sans-serif;
+$font_narrow: "Archivo Narrow", sans-serif;
+$font_hiragino: "Hiragino Sans", sans-serif;
+$font_husqvarna: "Husqvarna Gothic", sans-serif;
+$font_mincho: "Hiragino Mincho Pro", serif;
+$font_helvetica: "Helvetica LT Std Bold Cond", sans-serif;
+
+// ==========================================================================
+// Breakpoints
+// ==========================================================================
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+
+// Font Sizes
+$font-size-base: 1.6rem;
+$font-size-sm: 1.4rem;
+$font-size-lg: 1.8rem;
+$font-size-xl: 2.4rem;
+$font-size-xxl: 3.2rem;
+// Line Heights
+$line-height-base: 1.5;
+$line-height-tight: 1.2;
+$line-height-loose: 1.8;
+
+// ==========================================================================
+// Colors
+// ==========================================================================
+$color-base: #01439B;
+$color-primary: #000000;
+$color-text: #333333;
+$color-secondary: #00AFE5;
+$color-white: #FFFFFF;
+$color-gray: #92AFD5;
+$color-red: #ED4849;
+$color-blue: #01439B;
+
+// ==========================================================================
+// Spacing
+// ==========================================================================
+$spacing-unit: 1.0rem;
+$spacing-xs: $spacing-unit;
+$spacing-sm: $spacing-unit * 2;
+$spacing-md: $spacing-unit * 3;
+$spacing-lg: $spacing-unit * 4;
+$spacing-xl: $spacing-unit * 5;
+
+// ==========================================================================
+// Z-index
+// ==========================================================================
+$z-index-dropdown: 1000;
+$z-index-sticky: 1020;
+$z-index-fixed: 1030;
+$z-index-modal-backdrop: 1040;
+$z-index-modal: 1050;
+$z-index-popover: 1060;
+$z-index-tooltip: 1070;

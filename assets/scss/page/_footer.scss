@@ -1,0 +1,368 @@
+#footer {
+    position: relative;
+    padding: 0;
+    .footer-main {
+        position: relative;
+        padding: 7.5rem 0 8.0rem;
+        background: $color-base;
+        @include sp {
+            padding: 8.0rem 0 8.0rem;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 38.9rem;
+            z-index: 0;
+            background-image: url(../image/footer-dot.png);
+            background-size: 100% auto;
+            background-repeat: repeat;
+            background-position: top right;
+        }
+        .container {
+            position: relative;
+            max-width: 132.0rem;
+            z-index: 3;
+        }
+        .footer-wrapper {
+            position: relative;
+            &::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+            .footer-logo {
+                position: relative;
+                display: block;
+                width: fit-content;
+                @include pc {
+                    float: left;
+                }
+                @include sp {
+                    width: 100%;
+                    margin-bottom: 6.0rem;
+                }
+                .logo-link {
+                    position: relative;
+                    display: block;
+                    width: fit-content;
+                    width: 20.2rem;
+                    text-decoration: none;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    padding: 0;
+                    margin: 0;
+                    @include sp {
+                        width: 27.0rem;
+                        margin: 0 auto;
+                    }
+                    img {
+                        position: relative;
+                        display: block;
+                        width: 100%;
+                        height: auto;
+                        margin: 0;
+                        border: none;
+                    }
+                }
+                .cta-info {
+                    position: relative;
+                    min-width: 20.2rem;
+                    max-width: 100%;
+                    width: fit-content;
+                    padding: 0.6rem 0;
+                    border-top: 1px solid #FFFFFF;
+                    border-bottom: 1px solid #FFFFFF;
+                    font-family: $font_roboto;
+                    font-size: 2.4rem;
+                    font-weight: 500;
+                    line-height: 3.0rem;
+                    color: #FFFFFF;
+                    text-align: center;
+                    margin-top: 5.0rem;
+                    @include sp {
+                        margin-top: 4.0rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 3.7rem;
+                        line-height: 4.8rem;
+                        padding: 1.6rem 0 1.5rem;
+                        width: 100%;
+                        max-width: 100%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    & > p {
+                        position: relative;
+                        margin: 0;
+                        @include sp {
+                            display: inline-block;
+                            &:not(:last-child) {
+                                &::after {
+                                    content: "/";
+                                    display: inline-block;
+                                    margin: 0 0.6rem;
+                                }
+                            }
+                        }
+                        & > span {
+                            position: relative;
+                        }
+                    }
+                }
+                .address {
+                    position: relative;
+                    margin-top: 1.8rem;
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    line-height: 2.4rem;
+                    color: #FFFFFF;
+                    text-align: left;
+                    @include sp {
+                        font-size: 2.4rem;
+                        line-height: 3.6rem;
+                        letter-spacing: 0.05em;
+                        text-align: center;
+                        margin-top: 2.4rem;
+                        margin-right: -1.0rem;
+                    }
+                }
+            }
+            .footer-nav {
+                position: relative;
+                
+                @include pc {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 2.4rem 7.0rem;
+                    width: fit-content;
+                    float: right;
+                }
+                @include sp {
+                    &::after {
+                        content: "";
+                        display: block;
+                        clear: both;
+                    }
+                }
+                
+                & > li {
+                    position: relative;
+                    @include pc {
+                        flex: 0 0 auto;
+                        width: 18.0rem;
+                    }
+                    @include sp {
+                        width: calc(50% - 3.0rem);
+                        &:nth-child(1) {
+                            float: left;
+                            margin-bottom: 4.0rem;
+                        }
+                        &:nth-child(2) {
+                            float: right;
+                            margin-bottom: 4.0rem;
+                        }
+                        &:nth-child(3) {
+                            float: left;
+                        }
+                        &:nth-child(4) {
+                            float: right;
+                        }
+                    }
+                    @include pc {
+                        &.w-min {
+                            width: 12.0rem;
+                            .nav-menu {
+                                width: 10.0rem;
+                                margin-left: auto;
+                            }
+                        }
+                    }
+                }
+                .menu-link {
+                    position: relative;
+                    display: inline-block;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    line-height: 1.875;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    cursor: pointer;
+                    z-index: 0;
+                    @include sp {
+                        font-size: 2.8rem;
+                        line-height: 1.75;
+                    }
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                .nav-menu {
+                    position: relative;
+                    display: block;
+                    & > li {
+                        position: relative;
+                        display: block;
+                        &:not(:last-child) {
+                            margin-bottom: 0.6rem;
+                            @include sp {
+                                margin-bottom: 0.4rem;
+                            }
+                        }
+                    }
+                }
+                .sub-menu {
+                    position: relative;
+                    display: block;
+                    padding-top: 1.2rem;
+                    border-top: 1px solid #FFFFFF;
+                    margin-top: 0.8rem;
+                    @include sp {
+                        padding-top: 2.0rem;
+                        margin-top: 1.2rem;
+                    }
+                    & > li {
+                        position: relative;
+                        display: block;
+                        &:not(:last-child) {
+                            margin-bottom: 0.6rem;
+                            @include sp {
+                                margin-bottom: 0.4rem;
+                            }
+                        }
+                        & > a {
+                            position: relative;
+                            display: inline-block;
+                            font-size: 1.4rem;
+                            font-weight: 400;
+                            line-height: 2.4rem;
+                            color: #FFFFFF;
+                            text-decoration: none;
+                            cursor: pointer;
+                            z-index: 0;
+                            @include sp {
+                                font-size: 2.4rem;
+                                line-height: 1.75;
+                            }
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                    & + .menu-link {
+                        display: inline-block;
+                        margin-top: 3.0rem;
+                        @include sp {
+                            margin-top: 4.0rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        position: relative;
+        padding: 5.0rem 0 3.0rem;
+        @include sp {
+            padding: 6.0rem 0 5.0rem;
+        }
+        .footer-social-menu {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2.0rem;
+            @include sp {
+                gap: 3.0rem;
+            }
+            & > li {
+                position: relative;
+                flex: 0 0 auto;
+            }
+            .link {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 4.0rem;
+                padding: 0;
+                margin: 0;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                z-index: 0;
+                @include sp {
+                    width: 6.0rem;
+                }
+                img {
+                    position: relative;
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    margin: 0;
+                    border: none;
+                }
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+        .footer-bottom-menu {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 11.0rem;
+            margin-top: 4.0rem;
+            @include sp {
+                gap: 0.4rem 4.0rem;
+                margin-top: 5.0rem;
+            }
+            & > li {
+                position: relative;
+                flex: 0 0 auto;
+            }
+            .link {
+                position: relative;
+                display: inline-block;
+                font-size: 1.6rem;
+                font-weight: 400;
+                line-height: 1.875;
+                color: $color-text;
+                text-decoration: none;
+                cursor: pointer;
+                z-index: 0;
+                @include sp {
+                    font-size: 2.4rem;
+                    line-height: 1.75;
+                    text-decoration: underline;
+                }
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .footer-copyright {
+            position: relative;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 2.4rem;
+            color: $color-text;
+            text-align: center;
+            margin-top: 6.0rem;
+            @include sp {
+                font-size: 2.0rem;
+                line-height: 3.0rem;
+                margin-top: 6.0rem;
+            }
+        }
+
+    }
+    
+}

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Zen+Maru+Gothic&family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap');
+
+@font-face{
+  font-family: 'Husqvarna Gothic';
+  src: url('Husqvarna-Gothic-Bold.otf') format('opentype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Hiragino Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("HiraKakuPro-W3.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Hiragino Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("HiraKakuPro-W6.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Hiragino Sans";
+  font-style: normal;
+  font-weight: 800;
+  src: url("HiraKakuStd-W8.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Hiragino Mincho Pro";
+  font-style: normal;
+  font-weight: 600;
+  src: url("HiraginoMinchoPro-W6.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Hiragino Mincho Pro";
+  font-style: normal;
+  font-weight: 300;
+  src: url("HiraginoMinchoPro-W3.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Helvetica LT Std Bold Cond";
+  font-style: normal;
+  font-weight: 700;
+  src: url("HelveticaLTStd-BoldCond.otf") format("opentype");
+}
